@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Juice Mania</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="img/Favicon.png" alt="logo image">
+                    Juice Mania
+                </a>    
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" onclick="window.location.href='index.html';">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#menu" class="nav__link" onclick="window.location.href='index.html';">Menu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link" onclick="window.location.href='index.html';">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#recently" class="nav__link" onclick="window.location.href='index.html';">Recently</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link" onclick="window.location.href='about.html';">About Us</a>
+                        </li>
+                    </ul>
+
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                
+
+                <img src="img/leaf-branch-4.png" alt="nav iamge" class="nav__img-1">
+                <img src="img/leaf-branch-3.png" alt="nav iamge" class="nav__img-2">
+              </div>
+
+              <div class="nav__buttons">
+                <!-- theme change button -->
+                <i class="ri-moon-line change-theme " id="theme-button"></i>
+                
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-line"></i>
+                </div>
+              </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <div class="card" >
+            <img onclick="showImgPreview()" class="hset" src="img/Chocolate Cheese Sandwich_low.png" >
+            <p class="sp-label">Best Food</p>
+            <h1 class="title">Chocolate Cheese Sandwich</h1>
+            <p class="old-price"></p>
+            <p class="new-price">₹140, -</p>
+            <!-- <p class="offer-info">The offer is valid until April 3 or as long as stock lasts</p> -->
+            <button href="javascript:void(0)" onclick="window.location.href='sandwich.html';" class="buy-btn">Related Items</button>
+            <div class="green-dot"></div>
+            <p class="stock-pcs">Pure Veg.</p>
+            <button class="add-to-cart-btn" onclick="parent.open('https://www.zomato.com/bhubaneswar/juice-mania-baramunda-bhubaneshwar')" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+              Order on Zomato</button>
+            <button class="add-to-wl-btn" onClick="parent.open('https://www.swiggy.com/restaurants/juice-mania-soubhagya-nagar-baramunda-bhubaneswar-193290')" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+             Order On Swiggy</button>
+          </div><!-- ./ card -->
+          
+          <div class="preview-container">
+            <div class="close-prev-btn" onclick="hidePreview()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+             <line x1="18" y1="6" x2="6" y2="18"></line>
+             <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              </div>
+                <img id="prev-img" src="">
+          </div>
+
+
+        <!--==================== FOOTER ====================-->
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>

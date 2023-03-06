@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Juice Mania</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="img/Favicon.png" alt="logo image">
+                    Juice Mania
+                </a>    
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" onclick="window.location.href='index.html';">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#menu" class="nav__link" onclick="window.location.href='index.html';">Menu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link" onclick="window.location.href='index.html';">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#recently" class="nav__link" onclick="window.location.href='index.html';">Recently</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link" onclick="window.location.href='about.html';">About Us</a>
+                        </li>
+                    </ul>
+
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                
+
+                <img src="img/leaf-branch-4.png" alt="nav iamge" class="nav__img-1">
+                <img src="img/leaf-branch-3.png" alt="nav iamge" class="nav__img-2">
+              </div>
+
+              <div class="nav__buttons">
+                <!-- theme change button -->
+                <i class="ri-moon-line change-theme " id="theme-button"></i>
+                <!-- login button -->
+             
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-line"></i>
+                </div>
+              </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+            <section class="popular section" id="popular">
+                <span class="section__subtitle">Sandwichs</span>
+                <h2 class="section__title">All you need is love and a tasty sandwich</h2>
+
+                <div class="popular__container container grid">
+                    <article class="popular__card" onclick="window.location.href='sandwich1.html';">
+                        <img src="img/mini-sandwiches-white-background-menu_116118-1330_low.png" alt="Popular image" class="popular__img2">
+                        <h3 class="popular__name">Veg Cheese Sandwich </h3>
+                            <span class="popular__description">bread-enclosed convenience food</span>
+                            <span class="popular__price">₹120</span>
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                       
+                    </article>
+                    <article class="popular__card" onclick="window.location.href='sandwich2.html';">
+                        <img src="img/che paneer sand.png" alt="Popular image" width="50" class="popular__img3">
+                        <h3 class="popular__name">Paneer Cheese Sandwich</h3>
+                            <span class="popular__description">bread-enclosed convenience food</span>
+                            <span class="popular__price">₹140</span>
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                        
+                    </article>
+                    <article class="popular__card" onclick="window.location.href='sandwich3.html';">
+                        <img src="img/2-2-sandwich-picture.png" alt="Popular iamge" class="popular__img2">
+                        <h3 class="popular__name">Corn Cheese Sandwich</h3>
+                            <span class="popular__description">bread-enclosed convenience food</span>
+                            <span class="popular__price">₹140</span>
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                       
+                    </article>
+                </article>
+                <article class="popular__card" onclick="window.location.href='sandwich4.html';">
+                    <img src="img/pngaaa.com-87731.png" alt="Popular image" width="50" class="popular__img2">
+                    <h3 class="popular__name">Veg Mix Cheese Sandwich</h3>
+                        <span class="popular__description">bread-enclosed convenience food</span>
+                        <span class="popular__price">₹160</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    
+                </article>
+                <article class="popular__card" onclick="window.location.href='sandwich5.html';">
+                    <img src="img/Chocolate Cheese Sandwich_low.png" alt="Popular iamge" class="popular__img5">
+                    <h3 class="popular__name">Chocolate Cheese Sandwich</h3>
+                        <span class="popular__description">bread-enclosed convenience food</span>
+                        <span class="popular__price">₹140</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                   
+                </article>
+                <article class="popular__card" onclick="window.location.href='sandwich6.html';">
+                    <img src="img/penaut butter sandwich.png" alt="Popular image" class="popular__img3">
+                    <h3 class="popular__name">Peanut Butter Fruit Sandwich</h3>
+                        <span class="popular__description">bread-enclosed convenience food</span>
+                        <span class="popular__price">₹160</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                   
+                </article>
+                </div>
+            </section>
+            
+
+            
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section">
+                <div class="newsletter__container container">
+                    <div class="newsletter__content grid">
+                        <img src="img/pizza4.png" alt="newsletter image" class="newsletter__img">
+
+                        <div class="newsletter__data">
+                            <span class="section__subtitle">newsletter</span>
+                            <h2 class="section__title">
+                                Subscribe For <br>
+                                Offer Updates
+                            </h2>
+                            <form action="" class="newsletter__form">
+                                <input type="email" placeholder="Enter email" class="newsletter__input">
+
+                                <button class="button newsletter__button" onclick="myFunction()">
+                                    Subscribe <i class="ri-send-plane-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="img/spinach-leaf.png" alt="newsletter image" class="newsletter__spinach">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="img/Favicon.png" alt="logo">
+                        Juice Mania
+                    </a>
+                    <p class="footer__description">
+                        Food for the body is not <br>
+                        enough. There must be food <br>
+                        for the soul.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">Main Menu</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__links">Menus</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Offer</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">About Us</a>
+                                </li>
+                            </ul>
+                    </div>
+               
+
+                    <div>
+                        <h3 class="footer__title">Information</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Order & Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">Reservation</a>
+                                </li>
+                            </ul>
+                    </div>
+
+                        <div>
+                            <h3 class="footer__title">Address</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__information">
+                                        Soubhagya Nagar, Phase 2,<br> Baramunda, Bhubaneswar,
+                                        <br> Odisha 751003
+                                    </li>
+                                    <li class="footer__information">
+                                       9AM - 11PM
+                                    </li>
+                                </ul>
+                        </div>
+                    
+
+                        <div>
+                            <h3 class="footer__titler">Social Media</h3>
+                                <ul class="footer__social">
+                                    <a href="#"   target="_blank" class="footer__social-link" onclick="parent.open('https://www.facebook.com/181217juicemania')">
+                                        <i class="ri-facebook-circle-fill"></i>
+                                    </a>
+                                    <a href="#"   target="_blank" class="footer__social-link">
+                                        <i class="ri-instagram-fill" onclick="parent.open('https://www.instagram.com/juice_mania_for_you/')"></i>
+                                    </a>
+                                    <a href="#"   target="_blank" class="footer__social-link">
+                                        <i class="ri-twitter-fill" onclick="window.location.href='about.html';"></i>
+                                    </a>
+                                </ul>
+                        </div>
+                   
+              
+
+                <img src="img/spring-onion.png" alt="footer image" class="footer__onion">
+                <!-- <img src="img/spinach-leaf.png" alt="footer image" class="footer__spinach"> -->
+                <img src="img/leaf-branch-4.png" alt="footer image" class="footer__leaf">
+            </div>
+
+            <div class="footer__info container">
+                <div class="footer__card">
+                    <img src="img/footer-card-1.png" alt="footer image">
+                    <img src="img/footer-card-2.png" alt="footer image">
+                    <img src="img/footer-card-3.png" alt="footer image">
+                    <img src="img/footer-card-4.png" alt="footer image">
+                </div>
+                <span class="footer__copy">
+                    &#169; Copyright AP code. All rights reserved.
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>

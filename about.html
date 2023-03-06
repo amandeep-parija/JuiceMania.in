@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Juice Mania</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="img/Favicon.png" alt="logo image">
+                    Juice Mania
+                </a>    
+
+              <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link" onclick="window.location.href='index.html';">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link" onclick="window.location.href='index.html';">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link" onclick="window.location.href='index.html';">Popular</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#recently" class="nav__link" onclick="window.location.href='index.html';">Recently</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link" onclick="window.location.href='about.html';">About Us</a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                
+
+                <img src="img/leaf-branch-4.png" alt="nav iamge" class="nav__img-1">
+                <img src="img/leaf-branch-3.png" alt="nav iamge" class="nav__img-2">
+              </div>
+
+              <div class="nav__buttons">
+                <!-- theme change button -->
+                <i class="ri-moon-line change-theme " id="theme-button"></i>
+                
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-line"></i>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <!-- About us -->
+       
+
+   <section id="about-head" class="section-p1">
+    <img src="img/2021-12-22.jpg" alt="shop image">
+    <div>
+    <h2>Who We Are?</h2>
+    <p>Juice Mania  is a shop that sells fruit and vegetable juices, Shakes, Smoothies, Sandwiches, Kulhad Pizzas and Moctails that are freshly squeezed on the premises. Most juice shops occupy a small footprint because they don't require a full kitchen or a seating area.  </p>
+    <h3>Our Vision Is,</h3>
+
+    <abbr title="">“Provide healthy products without harming the environment or the health of our customers. A healthy lifestyle promotes happy lives and happy people. We want to see everyone smiling and glowing.”</abbr>
+
+    <br><br>
+
+    <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
+        We believe in the great saying "Be the change you want to see in the world". At Juice Station we strive to make the best juice possible without adding any nasty elements. At the same time, we make sure that our environmental footprint is minimal. We are a 99% plastic free company.
+    </marquee>
+  </div>
+  </section> 
+
+        
+        
+           <section id="contact-details" class="section-p1" >
+            <div class="details">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our Outlet locations or contact us today</h2>
+                <h3>Main Outlet</h3>
+                <div>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <p>Soubhagya Nagar, Phase 2,
+                            Baramunda, Bhubaneswar,
+                            Odisha 751003</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>maniajuice2017@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>082700 90687</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-business-time"></i>
+                        <p>Monday to Sunday: 9.00am to 11.00pm</p>
+                    </li>
+                </div>
+            </div>
+        
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14971.24764837825!2d85.79115732739913!3d20.266633882656524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a79b1d5397fb%3A0x6a0439b196fc21c!2sJuice%20Mania!5e0!3m2!1sen!2sin!4v1677352424809!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           </section>
+        
+           <section id="form-details">
+            <form action="">
+                <span>LEAVE A MESSAGE</span>
+                <h2>We love to hear from you</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <!-- <button class="add-to-cart-btn" onclick="showAlert('Your Message is Submitted!!')">Submit</button> -->
+                <button class="add-to-cart-btn" onclick="myFunction()">Submit</button>
+            </form>
+        
+            <div class="people">
+              <div>
+                <img src="img/k31.png" alt="" height="50">
+                <p><span>Amandeep Parija</span> Frontend Developer<br>Phone: 9337915284 <br>  amandipparija76@gmail.com
+                </p>
+              </div>
+              <div>
+                <img src="img/k31.png" alt="" height="50">
+                <p><span>Amandeep Parija</span> Frontend Developer<br>Phone: 9337915284 <br>  amandipparija76@gmail.com
+                </p>
+              </div>
+              <div>
+                <img src="img/k31.png" alt="" height="50">
+                <p><span>Amandeep Parija</span> Frontend Developer<br>Phone: 9337915284 <br>  amandipparija76@gmail.com
+                </p>
+              </div>
+              <div>
+                <img src="img/k31.png" alt="" height="50">
+                <p><span>Amandeep Parija</span> Frontend Developer<br>Phone: 9337915284 <br>  amandipparija76@gmail.com
+                </p>
+              </div>
+              
+              </div>
+            </div>
+           </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="img/Favicon.png" alt="logo">
+                        Juice Mania
+                    </a>
+                    <p class="footer__description">
+                        Food for the body is not <br>
+                        enough. There must be food <br>
+                        for the soul.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">Main Menu</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__links">Menus</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Offer</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">About Us</a>
+                                </li>
+                            </ul>
+                    </div>
+               
+
+                    <div>
+                        <h3 class="footer__title">Information</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Order & Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__links" onclick="window.location.href='about.html';">Reservation</a>
+                                </li>
+                            </ul>
+                    </div>
+
+                        <div>
+                            <h3 class="footer__title">Address</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__information">
+                                        Soubhagya Nagar, Phase 2,<br> Baramunda, Bhubaneswar,
+                                        <br> Odisha 751003
+                                    </li>
+                                    <li class="footer__information">
+                                       9AM - 11PM
+                                    </li>
+                                </ul>
+                        </div>
+                    
+
+                        <div>
+                            <h3 class="footer__titler">Social Media</h3>
+                                <ul class="footer__social">
+                                    <a href="#"   target="_blank" class="footer__social-link" onclick="parent.open('https://www.facebook.com/181217juicemania')">
+                                        <i class="ri-facebook-circle-fill"></i>
+                                    </a>
+                                    <a href="#"   target="_blank" class="footer__social-link">
+                                        <i class="ri-instagram-fill" onclick="parent.open('https://www.instagram.com/juice_mania_for_you/')"></i>
+                                    </a>
+                                    <a href="#"   target="_blank" class="footer__social-link">
+                                        <i class="ri-twitter-fill" onclick="window.location.href='about.html';"></i>
+                                    </a>
+                                </ul>
+                        </div>
+                   
+              
+
+                <img src="img/spring-onion.png" alt="footer image" class="footer__onion">
+                <!-- <img src="img/spinach-leaf.png" alt="footer image" class="footer__spinach"> -->
+                <img src="img/leaf-branch-4.png" alt="footer image" class="footer__leaf">
+            </div>
+
+            <div class="footer__info container">
+                <div class="footer__card">
+                    <img src="img/footer-card-1.png" alt="footer image">
+                    <img src="img/footer-card-2.png" alt="footer image">
+                    <img src="img/footer-card-3.png" alt="footer image">
+                    <img src="img/footer-card-4.png" alt="footer image">
+                </div>
+                <span class="footer__copy">
+                    &#169; Copyright AP code. All rights reserved.
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
